@@ -1,0 +1,8 @@
+torch
+torchvision
+matplotlib
+tqdm
+PyYAML
+torchmetrics
+torch-fidelity
+numpy

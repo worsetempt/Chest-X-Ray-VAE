@@ -1,0 +1,21 @@
+seed: 42
+
+data:
+  root: data/chest_xray
+  image_size: 64
+  batch_size: 32
+  num_workers: 2
+  pin_memory: true
+  split: test
+  max_eval_images: null
+
+model:
+  in_channels: 1
+  latent_dim: 128
+  hidden_dims: [32, 64, 128, 256]
+
+eval:
+  checkpoint_path: outputs/train_run/checkpoints/best.pt
+  out_dir: outputs/eval_run
+  num_fake_mult: 1
+  device: auto
